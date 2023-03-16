@@ -194,6 +194,8 @@ body {
   background-color: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: transparent;
+  outline: transparent;
+  min-width: 169px;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -382,6 +384,7 @@ body {
 .footer-social-media {
   max-width: 208px;
   height: auto;
+  margin-right: 80px;
 }
 .footer-social-text {
   font-family: var(--secondary-font);
@@ -417,6 +420,35 @@ body {
   width: 24px;
   height: 24px;
   fill: currentColor;
+}
+.footer-form-desc {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.footer-form-input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+.footer-form-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 /*===================/footer===================*/
 
@@ -634,5 +666,63 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+}
+.modal-form-check-desc {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 24px;
+}
+.modal-form-check-link {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(77, 90, 229, 1);
+}
+.modal-form-check-desc::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2e2f42;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.modal-form-check:checked + .modal-form-check-desc::before {
+  background-color: #404bbf;
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.modal-form-check:focus + .modal-form-check-desc::before {
+  border-color: #4d5ae5;
+  outline: none;
+}
+.modal-form-submit {
+  padding: 16px 32px;
+  align-self: center;
+  min-width: 169px;
+  outline: transparent;
+  font-family: inherit;
+  background-color: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  color: #ffffff;
+  transition: background-color var(--transition-dur-and-func);
+}
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+  background-color: #404bbf;
 }
 /*===================/Modal form===================*/
