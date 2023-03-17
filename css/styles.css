@@ -74,6 +74,16 @@ body {
   outline: none;
   white-space: nowrap;
 }
+.visually-hidden-check {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /*===================Header===================*/
 .header {
   border-bottom: 1px solid #e7e9fc;
